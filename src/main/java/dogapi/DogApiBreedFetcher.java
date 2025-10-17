@@ -29,7 +29,7 @@ public class DogApiBreedFetcher implements BreedFetcher {
      */
 
     @Override
-    public List<String> getSubBreeds(String breed) {
+    public List<String> getSubBreeds(String breed) throws BreedFetcher.BreedNotFoundException{
         // return statement included so that the starter code can compile and run.
         if (breed == null) {
             throw new BreedNotFoundException("Breed cannot be null");
